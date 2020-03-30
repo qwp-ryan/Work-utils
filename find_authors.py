@@ -14,7 +14,9 @@ with open('authors.csv', 'r') as csvfile:
                     for name in target:
                         _name=''.join(name)
                         _authors=''.join(authors)
-                        if _name in _authors: be=True
+                        if _name in _authors: 
+                            be=True
+                            print(_name)
             #if be: print("有文章的%d"%line)
             if be: 
                 writer.write('1\n')
